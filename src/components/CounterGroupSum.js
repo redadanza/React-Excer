@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 
 class CounterGroupSum extends Component {
-    constructor(props){
-        super(props);
-    }
     render() {
         return (
             <div>
-                <total>Total: {this.props.getTotal}</total>
+                <total>Sum of all counters: {this.props.getTotal}</total>
             </div>
         );
     }

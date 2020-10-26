@@ -14,10 +14,7 @@ class CounterGroup extends Component {
         return Array.from(Array(number).keys());
     }
     onChangeHandler = (number) => {
-        
-        let total = this.state.total;
         this.setState((prevState) => ({total: prevState.total + number}), () => this.props.getTotal(this.state.total));
-        console.log(total);
     }
     render() {
        const size = this.props.size;
