@@ -20,6 +20,7 @@ class CounterSizeGenerator extends Component {
                 <fieldset>
                     <label htmlFor="size">size: </label>
                     <input type="number" 
+                    min = "0"
                     name="size" 
                     id="size"
                     value={this.state.size}
