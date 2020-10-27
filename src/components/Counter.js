@@ -12,6 +12,9 @@ class Counter extends Component {
             number:0,
         };
     }
+    componentWillUnmount() {
+        this.props.onChangeHandler(-this.state.number);
+    }
     onIncrease(event){
         
         this.setState((prevState) => ({number: prevState.number + 1}), ()=> this.props.onChangeHandler(1));

@@ -11,6 +11,7 @@ class MultiCounter extends Component {
         
         this.state = { size: 0, total: 0};
     }
+
     onGenerate(size){
         this.setState({size});
     }

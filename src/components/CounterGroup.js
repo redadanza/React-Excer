@@ -8,7 +8,7 @@ class CounterGroup extends Component {
             total:0,
         };
     }
-    
+
     initArray(size){
         const number = size.length > 0 ? parseInt(size) : 0;
         return Array.from(Array(number).keys());
@@ -20,6 +20,7 @@ class CounterGroup extends Component {
        const size = this.props.size;
        const counterSizeArray = this.initArray(size);
         return (
+           
             <div>
                 {
                     counterSizeArray.map((value) => (
